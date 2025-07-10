@@ -152,66 +152,68 @@
         <div class="container right" onclick="toggleDetails(this)">
             <div class="content">
                 <div class="date">7月22日（周二）</div>
-                <div class="title">市区或周边自由游</div>
-                <div class="details">全天自由活动，探索上海市区或附近景点</div>
+                <div class="title">上海→唐山（高铁），抵达后入住休息</div>
+                <div class="details">上午从上海乘坐高铁前往唐山（约6小时）<br>下午抵达后休息，适应环境</div>
             </div>
         </div>
 
         <div class="container left" onclick="toggleDetails(this)">
             <div class="content">
                 <div class="date">7月23日（周三）</div>
-                <div class="title">凌晨出发，上海→济南，自驾约1080公里，11-12小时车程</div>
-                <div class="details">凌晨出发自驾<br>预计11-12小时车程<br>抵达济南，入住酒店休息</div>
+                <div class="title">唐山游玩</div>
+                <div class="details">游览抗震纪念馆、南湖公园、陶瓷博物馆等主要景点<br>晚上可选择品尝当地特色美食</div>
             </div>
         </div>
 
         <div class="container right" onclick="toggleDetails(this)">
             <div class="content">
                 <div class="date">7月24日（周四）</div>
-                <div class="title">济南→德州（约230公里，2.5小时）→唐山（约200公里，2小时）</div>
-                <div class="details">上午游览济南主要景点<br>下午短暂停留德州<br>傍晚抵达唐山，入住酒店</div>
+                <div class="title">唐山继续游玩</div>
+                <div class="details">深度探索唐山文化与城市风貌<br>可安排轻松活动或自由行程</div>
             </div>
         </div>
 
         <div class="container left" onclick="toggleDetails(this)">
             <div class="content">
                 <div class="date">7月25日（周五）</div>
-                <div class="title">唐山游览（抗震纪念馆、南湖公园等）</div>
-                <div class="details">全天游览唐山抗震纪念馆、南湖公园及其他景点</div>
+                <div class="title">唐山→北京（高铁或自驾）</div>
+                <div class="details">上午从唐山出发前往北京（高铁约1.5小时）<br>下午在北京休息或开始景点游览</div>
             </div>
         </div>
 
         <div class="container right" onclick="toggleDetails(this)">
             <div class="content">
                 <div class="date">7月26日（周六）</div>
-                <div class="title">唐山→北京，约180公里，3小时车程，全天北京游玩</div>
-                <div class="details">上午从唐山出发<br>约3小时车程抵达北京<br>全天游览北京主要景点</div>
+                <div class="title">北京游玩第一天</div>
+                <div class="details">天安门广场、故宫博物院、王府井大街<br>晚上可安排夜游长安街或登景山看夜景</div>
             </div>
         </div>
 
         <div class="container left" onclick="toggleDetails(this)">
             <div class="content">
                 <div class="date">7月27日（周日）</div>
-                <div class="title">北京白天游览，晚上自驾3-4小时至南京住宿</div>
-                <div class="details">白天继续游览北京<br>晚上自驾3-4小时至南京入住</div>
+                <div class="title">北京游玩第二天</div>
+                <div class="details">颐和园、清华北大校园、奥林匹克公园<br>晚上可选择前往簋街体验地道美食</div>
             </div>
         </div>
 
         <div class="container right" onclick="toggleDetails(this)">
             <div class="content">
                 <div class="date">7月28日（周一）</div>
-                <div class="title">南京游玩</div>
-                <div class="details">全天游览南京主要景点，休闲游玩</div>
+                <div class="title">北京→南京（高铁）+ 南京游玩</div>
+                <div class="details">上午乘坐高铁前往南京（约4小时）<br>下午游览夫子庙、中山陵或总统府<br>晚上入住酒店休息</div>
             </div>
         </div>
 
         <div class="container left" onclick="toggleDetails(this)">
             <div class="content">
                 <div class="date">7月29日（周二）</div>
-                <div class="title">南京→嘉兴→上海，自驾约300公里，4小时车程</div>
-                <div class="details">上午从南京出发<br>途径嘉兴短暂停留游玩<br>下午抵达上海休息</div>
+                <div class="title">南京→嘉兴→上海（自驾约300公里）</div>
+                <div class="details">上午从南京出发<br>途中嘉兴短暂停留（如乌镇、西塘等）<br>下午抵达上海休息</div>
             </div>
         </div>
+
+        <!-- 以下内容保持不变 -->
 
         <div class="container right" onclick="toggleDetails(this)">
             <div class="content">
@@ -228,7 +230,6 @@
                 <div class="details">全天安排上海迪士尼乐园游玩</div>
             </div>
         </div>
-
 
         <div class="container right" onclick="toggleDetails(this)">
             <div class="content">
@@ -267,11 +268,7 @@
     <script>
         function toggleDetails(container) {
             const details = container.querySelector('.details');
-            if (details.style.display === "block") {
-                details.style.display = "none";
-            } else {
-                details.style.display = "block";
-            }
+            details.style.display = (details.style.display === "block") ? "none" : "block";
         }
     </script>
 
