@@ -3,275 +3,198 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>2025年7月19日—8月4日详细时间线</title>
+    <title>2025年7月旅行计划对比：Plan A vs Plan B</title>
     <style>
         body {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            background: #f0f2f5;
-            padding: 20px;
+            background: #f8f9fa;
+            padding: 30px;
             margin: 0;
         }
 
         h1 {
             text-align: center;
-            margin-bottom: 30px;
-            color: #222;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            max-width: 1600px;
+            margin: auto;
         }
 
         .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 4px;
-            background: #4a90e2;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -2px;
-        }
-
-        .container {
-            padding: 15px 20px;
-            position: relative;
             width: 50%;
-            box-sizing: border-box;
-            cursor: pointer;
-            transition: background-color 0.25s ease;
-        }
-
-        .container:hover {
-            background-color: #e8f0fe;
-        }
-
-        .container.left {
-            left: 0;
-            text-align: left;
-        }
-
-        .container.right {
-            left: 50%;
-            text-align: left;
-        }
-
-        .content {
-            background: white;
-            padding: 15px 20px;
-            border-radius: 8px;
+            background-color: #fff;
             border: 1px solid #ddd;
-            position: relative;
-            min-height: 100px;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
 
-        .container.left .content {
-            margin-left: 20px;
+        .timeline h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4a90e2;
         }
 
-        .container.right .content {
-            margin-right: 20px;
+        .day-block {
+            border-left: 4px solid #4a90e2;
+            padding-left: 12px;
+            margin-bottom: 20px;
         }
 
         .date {
-            font-weight: 700;
-            margin-bottom: 6px;
+            font-weight: bold;
             color: #4a90e2;
             font-size: 1.1em;
         }
 
         .title {
-            font-size: 1em;
             font-weight: 600;
-            margin-bottom: 6px;
-            user-select: none;
+            margin: 5px 0;
         }
 
         .details {
-            display: none;
-            font-size: 0.9em;
+            font-size: 0.95em;
             color: #555;
-            margin-top: 8px;
-            line-height: 1.4;
             white-space: pre-wrap;
-        }
-
-        .container.left::before,
-        .container.right::before {
-            content: "";
-            position: absolute;
-            top: 28px;
-            width: 16px;
-            height: 16px;
-            background: #4a90e2;
-            border-radius: 50%;
-            z-index: 1;
-        }
-
-        .container.left::before {
-            right: -8px;
-        }
-
-        .container.right::before {
-            left: -8px;
         }
     </style>
 </head>
 
 <body>
-
-    <h1>2025年7月19日—8月4日详细时间线（按顺序）</h1>
-    <div class="timeline">
-
-        <div class="container left" onclick="toggleDetails(this)">
-            <div class="content">
+    <h1>2025年7月19日—8月4日旅行计划</h1>
+    <div class="grid">
+        <!-- Plan A -->
+        <div class="timeline">
+            <h2>Plan A</h2>
+            <div class="day-block">
                 <div class="date">7月19日（周六）</div>
                 <div class="title">温哥华→上海，10:50起飞，跨日飞行</div>
-                <div class="details">10:50 出发温哥华国际机场，搭乘飞机飞往上海<br>飞机上过夜</div>
+                <div class="details">10:50 出发温哥华国际机场，搭乘飞机飞往上海飞机上过夜</div>
             </div>
-        </div>
 
-        <div class="container right" onclick="toggleDetails(this)">
-            <div class="content">
+            <div class="day-block">
                 <div class="date">7月20日（周日）</div>
                 <div class="title">上海（家），抵达后准备身份证补办资料</div>
-                <div class="details">早晨抵达上海浦东机场<br>回家休息<br>准备身份证补办所需材料</div>
+                <div class="details">早晨抵达上海浦东机场 回家休息准备身份证补办所需材料</div>
             </div>
-        </div>
 
-        <div class="container left" onclick="toggleDetails(this)">
-            <div class="content">
+            <div class="day-block">
                 <div class="date">7月21日（周一）</div>
                 <div class="title">上午办理驾照补办，下午车辆准备</div>
-                <div class="details">上午：前往车管所办理驾照补办<br>下午：车辆检查及准备自驾设备</div>
+                <div class="details">上午：前往车管所办理驾照补办 下午：车辆检查及准备自驾设备</div>
             </div>
-        </div>
 
-        <div class="container right" onclick="toggleDetails(this)">
-            <div class="content">
+            <div class="day-block">
                 <div class="date">7月22日（周二）</div>
                 <div class="title">上海→唐山（高铁），抵达后入住休息</div>
-                <div class="details">上午从上海乘坐高铁前往唐山（约6小时）<br>下午抵达后休息，适应环境</div>
+                <div class="details">上午从上海乘坐高铁前往唐山（约6小时）\n下午抵达后休息，适应环境</div>
             </div>
-        </div>
-
-        <div class="container left" onclick="toggleDetails(this)">
-            <div class="content">
+            <div class="day-block">
                 <div class="date">7月23日（周三）</div>
                 <div class="title">唐山游玩</div>
-                <div class="details">游览抗震纪念馆、南湖公园、陶瓷博物馆等主要景点<br>晚上可选择品尝当地特色美食</div>
+                <div class="details">游览抗震纪念馆、南湖公园、陶瓷博物馆等主要景点\n晚上可选择品尝当地特色美食</div>
             </div>
-        </div>
-
-        <div class="container right" onclick="toggleDetails(this)">
-            <div class="content">
+            <div class="day-block">
                 <div class="date">7月24日（周四）</div>
                 <div class="title">唐山继续游玩</div>
-                <div class="details">深度探索唐山文化与城市风貌<br>可安排轻松活动或自由行程</div>
+                <div class="details">深度探索唐山文化与城市风貌\n可安排轻松活动或自由行程</div>
             </div>
-        </div>
-
-        <div class="container left" onclick="toggleDetails(this)">
-            <div class="content">
+            <div class="day-block">
                 <div class="date">7月25日（周五）</div>
                 <div class="title">唐山→北京（高铁或自驾）</div>
-                <div class="details">上午从唐山出发前往北京（高铁约1.5小时）<br>下午在北京休息或开始景点游览</div>
+                <div class="details">上午从唐山出发前往北京（高铁约1.5小时）\n下午在北京休息或开始景点游览</div>
             </div>
-        </div>
-
-        <div class="container right" onclick="toggleDetails(this)">
-            <div class="content">
+            <div class="day-block">
                 <div class="date">7月26日（周六）</div>
                 <div class="title">北京游玩第一天</div>
-                <div class="details">天安门广场、故宫博物院、王府井大街<br>晚上可安排夜游长安街或登景山看夜景</div>
+                <div class="details">天安门广场、故宫博物院、王府井大街\n晚上可安排夜游长安街或登景山看夜景</div>
             </div>
-        </div>
-
-        <div class="container left" onclick="toggleDetails(this)">
-            <div class="content">
+            <div class="day-block">
                 <div class="date">7月27日（周日）</div>
                 <div class="title">北京游玩第二天</div>
-                <div class="details">颐和园、清华北大校园、奥林匹克公园<br>晚上可选择前往簋街体验地道美食</div>
+                <div class="details">颐和园、清华北大校园、奥林匹克公园\n晚上可选择前往簋街体验地道美食</div>
             </div>
-        </div>
-
-        <div class="container right" onclick="toggleDetails(this)">
-            <div class="content">
+            <div class="day-block">
                 <div class="date">7月28日（周一）</div>
                 <div class="title">北京→南京（高铁）+ 南京游玩</div>
-                <div class="details">上午乘坐高铁前往南京（约4小时）<br>下午游览夫子庙、中山陵或总统府<br>晚上入住酒店休息</div>
+                <div class="details">上午乘坐高铁前往南京（约4小时）\n下午游览夫子庙、中山陵或总统府\n晚上入住酒店休息</div>
             </div>
-        </div>
-
-        <div class="container left" onclick="toggleDetails(this)">
-            <div class="content">
+            <div class="day-block">
                 <div class="date">7月29日（周二）</div>
                 <div class="title">南京→嘉兴→上海（自驾约300公里）</div>
-                <div class="details">上午从南京出发<br>途中嘉兴短暂停留（如乌镇、西塘等）<br>下午抵达上海休息</div>
+                <div class="details">上午从南京出发\n途中嘉兴短暂停留（如乌镇、西塘等）\n下午抵达上海休息</div>
             </div>
         </div>
 
-        <!-- 以下内容保持不变 -->
+        <!-- Plan B -->
+        <div class="timeline">
+            <h2>Plan B</h2>
+            <div class="day-block">
+                <div class="date">7月19日（周六）</div>
+                <div class="title">温哥华→上海，10:50起飞，跨日飞行</div>
+                <div class="details">10:50 出发温哥华国际机场，搭乘飞机飞往上海\n飞机上过夜</div>
+            </div>
 
-        <div class="container right" onclick="toggleDetails(this)">
-            <div class="content">
-                <div class="date">7月30日（周三）</div>
-                <div class="title">失恋博物馆、浦东美术馆、星空艺术馆，晚上迷你Doll玩偶艺术展</div>
-                <div class="details">参观失恋博物馆、浦东美术馆、星空艺术馆<br>晚上观赏迷你Doll玩偶艺术展</div>
+            <div class="day-block">
+                <div class="date">7月20日（周日）</div>
+                <div class="title">上海（家），抵达后准备身份证补办资料</div>
+                <div class="details">早晨抵达上海浦东机场\n回家休息\n准备身份证补办所需材料</div>
+            </div>
+
+            <div class="day-block">
+                <div class="date">7月21日（周一）</div>
+                <div class="title">上午办理驾照补办，下午车辆准备</div>
+                <div class="details">上午：前往车管所办理驾照补办\n下午：车辆检查及准备自驾设备</div>
+            </div>
+
+            <div class="day-block">
+                <div class="date">7月22日（周二）</div>
+                <div class="title">上海→南京（自驾）→唐山（高铁）</div>
+                <div class="details">上午自驾从上海出发前往南京（约3小时）\n午餐后乘坐高铁从南京前往唐山（约5.5小时）\n晚上抵达唐山入住酒店</div>
+            </div>
+            <div class="day-block">
+                <div class="date">7月23日（周三）</div>
+                <div class="title">唐山游玩</div>
+                <div class="details">游览抗震纪念馆、南湖公园、陶瓷博物馆等主要景点\n晚上可选择品尝当地特色美食</div>
+            </div>
+            <div class="day-block">
+                <div class="date">7月24日（周四）</div>
+                <div class="title">唐山继续游玩</div>
+                <div class="details">深度探索唐山文化与城市风貌\n可安排轻松活动或自由行程</div>
+            </div>
+            <div class="day-block">
+                <div class="date">7月25日（周五）</div>
+                <div class="title">唐山→北京（高铁或自驾）</div>
+                <div class="details">上午从唐山出发前往北京（高铁约1.5小时）\n下午在北京休息或开始景点游览</div>
+            </div>
+            <div class="day-block">
+                <div class="date">7月26日（周六）</div>
+                <div class="title">北京游玩第一天</div>
+                <div class="details">天安门广场、故宫博物院、王府井大街\n晚上可安排夜游长安街或登景山看夜景</div>
+            </div>
+            <div class="day-block">
+                <div class="date">7月27日（周日）</div>
+                <div class="title">北京游玩第二天</div>
+                <div class="details">颐和园、清华北大校园、奥林匹克公园\n晚上可选择前往簋街体验地道美食</div>
+            </div>
+            <div class="day-block">
+                <div class="date">7月28日（周一）</div>
+                <div class="title">北京→南京（高铁）+ 南京游玩</div>
+                <div class="details">上午乘坐高铁前往南京（约4小时）\n下午游览夫子庙、中山陵或总统府\n晚上入住酒店休息</div>
+            </div>
+            <div class="day-block">
+                <div class="date">7月29日（周二）</div>
+                <div class="title">南京→嘉兴→上海（自驾约300公里）</div>
+                <div class="details">上午从南京出发\n途中嘉兴短暂停留（如乌镇、西塘等）\n下午抵达上海休息</div>
             </div>
         </div>
-
-        <div class="container left" onclick="toggleDetails(this)">
-            <div class="content">
-                <div class="date">7月31日（周四）</div>
-                <div class="title">迪士尼全天游玩</div>
-                <div class="details">全天安排上海迪士尼乐园游玩</div>
-            </div>
-        </div>
-
-        <div class="container right" onclick="toggleDetails(this)">
-            <div class="content">
-                <div class="date">8月1日（周五）</div>
-                <div class="title">动漫快闪展或上海水族馆</div>
-                <div class="details">参观动漫快闪展或上海水族馆，选择其一游玩</div>
-            </div>
-        </div>
-
-        <div class="container left" onclick="toggleDetails(this)">
-            <div class="content">
-                <div class="date">8月2日（周六）</div>
-                <div class="title">上海市区轻松游或自由活动</div>
-                <div class="details">当天安排轻松活动或自由安排，准备返程</div>
-            </div>
-        </div>
-
-        <div class="container right" onclick="toggleDetails(this)">
-            <div class="content">
-                <div class="date">8月3日（周日）</div>
-                <div class="title">上海（家）休息，整理行李</div>
-                <div class="details">全天休息<br>整理行李，准备返程</div>
-            </div>
-        </div>
-
-        <div class="container left" onclick="toggleDetails(this)">
-            <div class="content">
-                <div class="date">8月4日（周一）</div>
-                <div class="title">上海（家）→机场→温哥华，提前3小时出发办理登机手续</div>
-                <div class="details">提前3小时出发前往机场<br>办理登机手续，飞回温哥华</div>
-            </div>
-        </div>
-
     </div>
-
-    <script>
-        function toggleDetails(container) {
-            const details = container.querySelector('.details');
-            details.style.display = (details.style.display === "block") ? "none" : "block";
-        }
-    </script>
-
 </body>
 
 </html>
